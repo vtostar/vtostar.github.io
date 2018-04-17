@@ -112,18 +112,18 @@
 
 
 
-<meta name="description" content="邀请码生产算法，要保证两个特性：1.随机性  2.唯一性">
+<meta name="description" content="###需求:生成长度为6位的邀请码范围为10个数字加上26个字母，不区分大小写 ###分析:邀请码生产算法，要保证两个特性：1.随机性  2.唯一性 ###实现:第一种方法：随机生成法产生一个随机数，然后转化成36进制或者每一个生成的时候都随机，然后去数据库的表里查询生成的邀请码是否重复，如果重复则重新生成，知道不重复为止。 优点：生成简单方便缺点：需要查询数据，当数据量大的时候，重复几率很比较高">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="邀请码生成算法">
 <meta property="og:url" content="http://vtostar.cc/2018/03/20/rand_code/index.html">
 <meta property="og:site_name" content="あ">
-<meta property="og:description" content="邀请码生产算法，要保证两个特性：1.随机性  2.唯一性">
+<meta property="og:description" content="###需求:生成长度为6位的邀请码范围为10个数字加上26个字母，不区分大小写 ###分析:邀请码生产算法，要保证两个特性：1.随机性  2.唯一性 ###实现:第一种方法：随机生成法产生一个随机数，然后转化成36进制或者每一个生成的时候都随机，然后去数据库的表里查询生成的邀请码是否重复，如果重复则重新生成，知道不重复为止。 优点：生成简单方便缺点：需要查询数据，当数据量大的时候，重复几率很比较高">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-20T11:24:59.000Z">
+<meta property="og:updated_time" content="2018-03-20T11:59:54.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="邀请码生成算法">
-<meta name="twitter:description" content="邀请码生产算法，要保证两个特性：1.随机性  2.唯一性">
+<meta name="twitter:description" content="###需求:生成长度为6位的邀请码范围为10个数字加上26个字母，不区分大小写 ###分析:邀请码生产算法，要保证两个特性：1.随机性  2.唯一性 ###实现:第一种方法：随机生成法产生一个随机数，然后转化成36进制或者每一个生成的时候都随机，然后去数据库的表里查询生成的邀请码是否重复，如果重复则重新生成，知道不重复为止。 优点：生成简单方便缺点：需要查询数据，当数据量大的时候，重复几率很比较高">
 
 
 
@@ -352,7 +352,12 @@
       
 
       
-        <p>邀请码生产算法，要保证两个特性：1.随机性  2.唯一性</p>
+        <p>###需求:<br>生成长度为6位的邀请码<br>范围为10个数字加上26个字母，不区分大小写</p>
+<p>###分析:<br>邀请码生产算法，要保证两个特性：1.随机性  2.唯一性</p>
+<p>###实现:<br>第一种方法：随机生成法<br>产生一个随机数，然后转化成36进制<br>或者每一个生成的时候都随机，然后去数据库的表里查询生成的邀请码是否重复，如果重复则重新生成，知道不重复为止。</p>
+<p>优点：生成简单方便<br>缺点：需要查询数据，当数据量大的时候，重复几率很比较高，要多次查询数据库。</p>
+<p>第二种方法:唯一生成法<br>得到一个int类型的id(不会重复，如邀请码表的主键自增长id)，将其转化为36进制，可以得到一个唯一的邀请码。</p>
+<p>优点：生成唯一，不会重复<br>缺点：可以查询到规律，</p>
 
       
     </div>
@@ -392,6 +397,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/17/develop_info/" rel="prev" title="开发信息">
+                开发信息 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -459,7 +468,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>

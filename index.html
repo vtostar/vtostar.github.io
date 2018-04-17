@@ -285,6 +285,141 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://vtostar.cc/2018/04/17/develop_info/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="StarLord">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="あ">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/17/develop_info/" itemprop="url">开发信息</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-17T21:00:00+08:00">
+                2018-04-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          ##开发环境
+
+PHP(7.1.6)
+框架(Lumen5.5) https://lumen.laravel.com/
+数据库(MySQL 5.6)
+服务器 Nginx
+缓存 redis
+单元测试–PHPUnit
+API自动生成–APIDoc http://apidocjs.com/
+负载均衡(阿里云
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/17/develop_info/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://vtostar.cc/2018/03/20/rand_code/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -356,9 +491,10 @@
       
         
           
-          邀请码生产算法，要保证两个特性：1.随机性  2.唯一性
-
-          
+          ###需求:生成长度为6位的邀请码范围为10个数字加上26个字母，不区分大小写
+###分析:邀请码生产算法，要保证两个特性：1.随机性  2.唯一性
+###实现:第一种方法：随机生成法产生一个随机数，然后转化成36进制或者每一个生成的时候都随机，然后去数据库的表里查询生成的邀请码是否重复，如果重复则
+          ...
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/03/20/rand_code/#more" rel="contents">
@@ -698,7 +834,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
